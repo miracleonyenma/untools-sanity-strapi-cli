@@ -4,7 +4,7 @@
   "description": "CLI tool for migrating content from Sanity CMS to Strapi CMS",
   "main": "lib/cli.js",
   "bin": {
-    "sanity-strapi": "./bin/sanity-strapi"
+    "sanity-strapi": "bin/sanity-strapi"
   },
   "scripts": {
     "test": "jest",
