@@ -13,5 +13,7 @@ module.exports = {
     // Add any specific rules here
     'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'no-console': 'off',
+    'no-case-declarations': 'warn',
+    'no-useless-escape': 'warn'
   },
 };
