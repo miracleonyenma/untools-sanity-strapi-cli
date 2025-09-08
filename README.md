@@ -5,7 +5,7 @@ Migrate your content from Sanity CMS to Strapi CMS with ease.
 ## Installation
 
 ```bash
-npm install -g sanity-to-strapi-cli
+npm install -g @untools/sanity-strapi-cli
 
 # Quick Start
 
