@@ -1,0 +1,7 @@
+test/
+examples/
+.github/
+*.test.js
+.env
+.DS_Store
+coverage/
