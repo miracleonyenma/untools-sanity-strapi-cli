@@ -1,6 +1,6 @@
 {
   "name": "@untools/sanity-strapi-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CLI tool for migrating content from Sanity CMS to Strapi CMS",
   "main": "lib/cli.js",
   "bin": {
