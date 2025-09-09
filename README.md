@@ -16,10 +16,13 @@ sanity-strapi analyze --sanity-export ./my-export
 sanity-strapi schemas --sanity-project ./my-studio --sanity-export ./my-export
 
 # Migrate content
-STRAPI_API_TOKEN=your_token sanity-strapi content --sanity-export ./my-export
+STRAPI_API_TOKEN=your_token sanity-strapi content --sanity-export ./my-export --strapi-project ./my-strapi
 
 # Full migration
-STRAPI_API_TOKEN=your_token sanity-strapi migrate
+STRAPI_API_TOKEN=your_token sanity-strapi migrate --sanity-project ./my-studio --sanity-export ./my-export --strapi-project ./my-strapi
+
+# Interactive mode
+sanity-strapi --interactive
 ```
 
 ## Commands
@@ -31,13 +34,25 @@ STRAPI_API_TOKEN=your_token sanity-strapi migrate
 
 ## Configuration
 
-Environment variables or CLI options:
+### CLI Options
+
+- `--sanity-project <path>` - Path to Sanity studio project
+- `--sanity-export <path>` - Path to Sanity export data
+- `--strapi-project <path>` - Path to Strapi project
+- `--strapi-url <url>` - Strapi server URL
+- `--api-token <token>` - Strapi API token (required for content migration)
+- `--interactive` - Run in interactive mode
+- `--config <path>` - Path to configuration file
+- `--verbose` - Enable verbose logging
+
+### Environment Variables
 
 - `SANITY_PROJECT_PATH` - Path to Sanity studio project
-- `SANITY_EXPORT_PATH` - Path to Sanity export data
 - `STRAPI_PROJECT_PATH` - Path to Strapi project
-- `STRAPI_URL` - Strapi server URL
 - `STRAPI_API_TOKEN` - Strapi API token (required for content migration)
+- `CLOUDINARY_CLOUD_NAME` - Cloudinary cloud name (if using Cloudinary)
+- `CLOUDINARY_API_KEY` - Cloudinary API key (if using Cloudinary)
+- `CLOUDINARY_API_SECRET` - Cloudinary API secret (if using Cloudinary)
 
 ## License
 
