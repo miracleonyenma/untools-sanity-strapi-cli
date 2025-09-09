@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2025-09-09T07:02:27.138Z",
+  "summary": {
+    "totalSchemas": 5,
+    "totalComponents": 3,
+    "singletonTypes": [],
+    "totalDocuments": 7
+  },
+  "schemas": [
+    {
+      "name": "category",
+      "type": "collection",
+      "documentCount": 1,
+      "fieldCount": 2
+    },
+    {
+      "name": "page",
+      "type": "collection",
+      "documentCount": 2,
+      "fieldCount": 4
+    },
+    {
+      "name": "person",
+      "type": "collection",
+      "documentCount": 1,
+      "fieldCount": 5
+    },
+    {
+      "name": "post",
+      "type": "collection",
+      "documentCount": 1,
+      "fieldCount": 7
+    },
+    {
+      "name": "product",
+      "type": "collection",
+      "documentCount": 2,
+      "fieldCount": 6
+    }
+  ],
+  "components": [
+    "seo.seos",
+    "tag.tagses",
+    "specification.specificationses"
+  ],
+  "relationships": {
+    "person": {},
+    "post": {}
+  }
+}
